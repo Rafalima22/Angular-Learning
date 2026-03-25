@@ -1,0 +1,110 @@
+CONCEITOS-BASICOS
+Mapa didatico da pasta do projeto
+Gerado em 2026-03-19 03:18:42 -03
+
+============================================================
+VISAO GERAL
+============================================================
+
+Este projeto parece ser uma aplicacao Angular.
+Pense nele como uma casa organizada em partes:
+
+- configuracoes do projeto
+- arquivos publicos
+- codigo fonte
+- cache/ferramentas
+
+
+============================================================
+DESENHO DIDATICO
+============================================================
+
+conceitos-basicos/
+|
++-- .angular/
+|   |
+|   +-- cache/
+|       |
+|       +-- arquivos temporarios do Angular e do Vite
+|           usados para acelerar compilacao e execucao
+|
++-- .vscode/
+|   |
+|   +-- extensions.json   -> sugestoes de extensoes
+|   +-- launch.json       -> configuracao de depuracao
+|   +-- tasks.json        -> tarefas do editor
+|
++-- public/
+|   |
+|   +-- favicon.ico       -> icone exibido na aba do navegador
+|
++-- src/
+|   |
+|   +-- app/
+|   |   |
+|   |   +-- app.component.ts      -> logica principal do componente raiz
+|   |   +-- app.component.html    -> estrutura visual da tela
+|   |   +-- app.component.scss    -> estilos da tela
+|   |   +-- app.component.spec.ts -> testes do componente
+|   |   +-- app.config.ts         -> configuracoes da aplicacao
+|   |   +-- app.routes.ts         -> rotas/navegacao
+|   |
+|   +-- index.html         -> pagina HTML base
+|   +-- main.ts            -> ponto de entrada da aplicacao
+|   +-- styles.scss        -> estilos globais
+|
++-- README.md              -> descricao do projeto
++-- angular.json           -> configuracao do Angular CLI
++-- package.json           -> dependencias e scripts
++-- package-lock.json      -> versoes exatas das dependencias
++-- tsconfig.json          -> configuracao principal do TypeScript
++-- tsconfig.app.json      -> configuracao TS da aplicacao
++-- tsconfig.spec.json     -> configuracao TS dos testes
++-- .editorconfig          -> padrao de formatacao
++-- .gitignore             -> arquivos ignorados pelo Git
+
+
+============================================================
+COMO LER ESSA ESTRUTURA
+============================================================
+
+1. package.json
+   Diz quais bibliotecas o projeto usa e quais comandos podem ser rodados.
+
+2. src/
+   E a pasta mais importante para estudo, porque contem o codigo da aplicacao.
+
+3. src/app/
+   E onde fica o componente principal e a configuracao inicial do app.
+
+4. public/
+   Guarda arquivos estaticos publicados junto com o site.
+
+5. .angular/cache/
+   Nao costuma ser estudada no inicio. E so cache da ferramenta.
+
+
+============================================================
+FLUXO MENTAL SIMPLES
+============================================================
+
+main.ts
+  -> inicia a aplicacao
+  -> carrega configuracoes
+  -> renderiza AppComponent
+  -> AppComponent usa HTML + SCSS + TypeScript
+
+
+============================================================
+ONDE COMECAR A LER
+============================================================
+
+Se voce quiser entender o projeto por ordem:
+
+1. package.json
+2. src/main.ts
+3. src/app/app.component.ts
+4. src/app/app.component.html
+5. src/app/app.component.scss
+6. src/app/app.routes.ts
+
